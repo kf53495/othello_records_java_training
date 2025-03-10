@@ -31,10 +31,18 @@ public class Record {
         // 結果出力
         for (int i = 0; i < player_number; i++){
             System.out.println(players[i]);
-            System.out.println("累計獲得石数: " + );
+            System.out.println("累計獲得石数: " + record_sum(records[i]));
             System.out.println(Arrays.toString(records[i]));
         }
     }
+        // 石数合計値計算メソッド
+        private static int record_sum(int[] args){
+            int sum = 0;
+            for (int i = 0; i < args.length; i++){
+                sum += args[i];
+            }
+            return sum;
+        }
 }
 
 
